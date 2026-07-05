@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon CV - Sokhna Marieme Gueye</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!-- CSS externe -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- ===== BOUTON MODE SOMBRE / CLAIR ===== -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- ===== BOUTON RETOUR EN HAUT ===== -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== EN-TÊTE ===== -->
+    <header class="header">
+      <div class="header-content">
+        <div class="photo-profil">
+          <img src="../image/rems.jpeg" alt="" />
+        </div>
+        <div class="header-text">
+          <h1>SOKHNA MARIEME GUEYE</h1>
+          <p class="titre">Étudiante en Informatique</p>
+          <p class="sous-titre">
+            Fascinée par l'analyse de données et la bureautique, je cherche à
+            développer mes compétences techniques et communicationnelles pour
+            exceller dans ces domaines.
+          </p>
+          <div class="coordonees">
+            <span><i class="fas fa-phone"></i> 76-211-80-63</span>
+            <span><i class="fas fa-envelope"></i> gmareme2710@gmail.com</span>
+            <span><i class="fas fa-map-marker-alt"></i> Thiès, Sénégal</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="mainNav" class="main-nav">
+      <button id="menuToggle" class="menu-hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="navList">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#langues">Langues</a></li>
+        <li><a href="#centres-interet">Centres d'intérêt</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main>
+      <!-- ===== SECTION À PROPOS ===== -->
+      <section id="about" class="section">
+        <h2><i class="fas fa-user"></i> À propos de moi</h2>
+        <p>
+          Étudiante en 2<sup>ème</sup> année en informatique à l'université Iba
+          Der Thiam de Thiès et désireuse d'exceller en analyse de données ou en
+          bureautique. Je vise à acquérir des compétences techniques (Excel,
+          SQL, Word, Java…) ainsi qu'en communication pour collecter, analyser
+          et interpréter les données efficacement.
+        </p>
+      </section>
+
+      <!-- ===== SECTION FORMATION ===== -->
+      <section id="formation" class="section">
+        <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
+
+        <article class="formation-item">
+          <div class="item">
+            <h3>BFEM | CEM Grand Mbour</h3>
+            <p class="annee">2019 - 2020</p>
+          </div>
+        </article>
+
+        <article class="formation-item">
+          <div class="item">
+            <h3>Baccalauréat | Lycée Demba Diop</h3>
+            <p class="annee">2022 - 2023</p>
+          </div>
+        </article>
+
+        <article class="formation-item">
+          <div class="item">
+            <h3>
+              Licence 2 Informatique | Université Iba Der Thiam de Thiès (en
+              cours)
+            </h3>
+            <p class="annee">2024 - 2025</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== SECTION COMPÉTENCES ===== -->
+      <section id="competences" class="section">
+        <h2><i class="fas fa-code"></i> Compétences techniques</h2>
+
+        <ul class="competences-list">
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+          <li><i class="fab fa-python"></i> Python (bases)</li>
+          <li><i class="fas fa-file-excel"></i> Excel</li>
+          <li><i class="fas fa-database"></i> SQL (notions)</li>
+          <li><i class="fab fa-git-alt"></i> Git / VS Code</li>
+        </ul>
+        <!-- Barres de progression avec couleurs personnalisées -->
+<div class="progress-group">
+    <!-- HTML / CSS - Bleu -->
+    <div class="competence-bar bar-html">
+        <span><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> HTML / CSS</span>
+        <div class="barre-progression">
+            <div class="progression" data-niveau="85%">85%</div>
+        </div>
+    </div>
+
+    <!-- JavaScript - Jaune -->
+    <div class="competence-bar bar-js">
+        <span><i class="fab fa-js"></i> JavaScript</span>
+        <div class="barre-progression">
+            <div class="progression" data-niveau="30%">30%</div>
+        </div>
+    </div>
+
+
+    <!-- Excel / SQL - Orange -->
+    <div class="competence-bar bar-excel">
+        <span><i class="fas fa-file-excel"></i> <i class="fas fa-database"></i> Excel / SQL</span>
+        <div class="barre-progression">
+            <div class="progression" data-niveau="50%">60%</div>
+        </div>
+    </div>
+
+    <!-- Git / VS Code - Violet -->
+    <div class="competence-bar bar-git">
+        <span><i class="fab fa-git-alt"></i> <i class="fas fa-code"></i> Git / VS Code</span>
+        <div class="barre-progression">
+            <div class="progression" data-niveau="55%">60%</div>
+        </div>
+    </div>
+</div>
+
+      <!-- ===== SECTION EXPÉRIENCE ===== -->
+      <section id="experience" class="section">
+        <h2><i class="fas fa-briefcase"></i> Expérience professionnelle</h2>
+
+        <article class="experience-item">
+          <h3>Assistance bureautique</h3>
+          <p class="entreprise-date">Stage / Projet personnel</p>
+          <ul>
+            <li>Assistance à la mise en place d'outils bureautiques</li>
+            <li>Création de sommaires et de tableaux sur Excel</li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <h3>Projets académiques</h3>
+          <p class="entreprise-date">Université Iba Der Thiam de Thiès</p>
+          <ul>
+            <li>Conception d'un CV interactif en HTML/CSS/JS</li>
+            <li>Analyse de données sur SQL</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- ===== SECTION LANGUES ===== -->
+      <section id="langues" class="section">
+        <h2><i class="fas fa-language"></i> Langues</h2>
+        <ul class="langues-list">
+          <li>
+            <span class="langue-nom">Français</span>
+            <span class="langue-niveau">— Bien lu, écrit et parlé</span>
+            <span class="langue-niveau-badge">Courant</span>
+          </li>
+          <li>
+            <span class="langue-nom">Anglais</span>
+            <span class="langue-niveau"
+              >— Assez bon, lu et écrit, peu parlé</span
+            >
+            <span class="langue-niveau-badge">Intermédiaire</span>
+          </li>
+          <li>
+            <span class="langue-nom">Wolof</span>
+            <span class="langue-niveau">— Langue maternelle</span>
+            <span class="langue-niveau-badge">Natif</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== SECTION CENTRES D'INTÉRÊT ===== -->
+      <section id="centres-interet" class="section">
+        <h2><i class="fas fa-heart"></i> Centres d'intérêt</h2>
+        <div class="interets">
+          <span class="interet-tag"><i class="fas fa-book"></i> Lecture</span>
+          <span class="interet-tag"
+            ><i class="fas fa-running"></i> Sport occasionnel</span
+          >
+          <span class="interet-tag"><i class="fas fa-music"></i> Musique</span>
+        </div>
+      </section>
+
+      <!-- ===== SECTION CONTACT ===== -->
+      <section id="contact" class="section">
+        <h2><i class="fas fa-envelope"></i> Me contacter</h2>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" placeholder="Votre nom" required />
+            <small class="error-message" id="nomError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="votre@email.com"
+              required
+            />
+            <small class="error-message" id="emailError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Votre message..."
+              required
+            ></textarea>
+            <small class="error-message" id="messageError"></small>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Envoyer
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ===== PIED DE PAGE ===== -->
+    <footer class="footer">
+      <p>&copy; 2026 Sokhna Marieme Gueye - Tous droits réservés</p>
+      <p>
+        Réalisé avec <i class="fas fa-heart" style="color: #e74c3c"></i> dans le
+        cadre du module Développement Web
+      </p>
+    </footer>
+
+    <!-- JavaScript externe -->
+    <script src="../js/scripte.js"></script>
+  </body>
+</html>
